@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自定义配置 | 基于Docker的自动化部署</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/autodeploy/docker.ico">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/autodeploy/assets/css/0.styles.5e932762.css" as="style"><link rel="preload" href="/autodeploy/assets/js/app.348341e4.js" as="script"><link rel="preload" href="/autodeploy/assets/js/2.899ccddd.js" as="script"><link rel="preload" href="/autodeploy/assets/js/13.20be7393.js" as="script"><link rel="prefetch" href="/autodeploy/assets/js/10.57598e7b.js"><link rel="prefetch" href="/autodeploy/assets/js/11.20cf4fc4.js"><link rel="prefetch" href="/autodeploy/assets/js/12.393fb302.js"><link rel="prefetch" href="/autodeploy/assets/js/3.95aadac3.js"><link rel="prefetch" href="/autodeploy/assets/js/4.865692a8.js"><link rel="prefetch" href="/autodeploy/assets/js/5.06b13832.js"><link rel="prefetch" href="/autodeploy/assets/js/6.c8b7a84a.js"><link rel="prefetch" href="/autodeploy/assets/js/7.f05bcd66.js"><link rel="prefetch" href="/autodeploy/assets/js/8.821a9cf7.js"><link rel="prefetch" href="/autodeploy/assets/js/9.75b53beb.js">
+    <link rel="stylesheet" href="/autodeploy/assets/css/0.styles.5e932762.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/autodeploy/" class="home-link router-link-active"><!----> <span class="site-name">基于Docker的自动化部署</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/autodeploy/guide/command.html" class="nav-link">
+  指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/autodeploy/guide/command.html" class="nav-link">
+  指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>自动化部署指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/autodeploy/guide/command.html" class="sidebar-link">部署前准备</a></li><li><a href="/autodeploy/guide/process.html" class="sidebar-link">快速上手</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/autodeploy/guide/process.html#step1-从工蜂仓库拉取项目代码" class="sidebar-link">Step1. 从工蜂仓库拉取项目代码</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/process.html#step2-进行项目开发" class="sidebar-link">Step2. 进行项目开发</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/process.html#step3-向-git-仓库推送代码" class="sidebar-link">Step3. 向 git 仓库推送代码</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/process.html#step4-配置coding" class="sidebar-link">Step4. 配置Coding</a></li></ul></li><li><a href="/autodeploy/guide/自定义配置.html" class="active sidebar-link">自定义配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/autodeploy/guide/自定义配置.html#非-egg-项目的部署" class="sidebar-link">非 egg 项目的部署</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/自定义配置.html#静态项目的部署" class="sidebar-link">静态项目的部署</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/自定义配置.html#自定义目标服务器" class="sidebar-link">自定义目标服务器</a></li></ul></li><li><a href="/autodeploy/guide/setup.html" class="sidebar-link">个人服务器安装Docker与Nginx</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/autodeploy/guide/setup.html#宝塔服务器安装方法" class="sidebar-link">宝塔服务器安装方法</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/setup.html#一般服务器的安装方法" class="sidebar-link">一般服务器的安装方法</a></li></ul></li><li><a href="/autodeploy/guide/help.html" class="sidebar-link">其他问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/autodeploy/guide/help.html#docker重启但容器不重启" class="sidebar-link">docker重启但容器不重启</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/help.html#docker服务重启后容器启动失败" class="sidebar-link">docker服务重启后容器启动失败</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/help.html#修改部署网址" class="sidebar-link">修改部署网址</a></li><li class="sidebar-sub-header"><a href="/autodeploy/guide/help.html#部署时打包失败" class="sidebar-link">部署时打包失败</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="自定义配置"><a href="#自定义配置" class="header-anchor">#</a> 自定义配置</h1> <p>在这里，可以自定义目标服务器及其内容。除了列出来的配置之外，请不要改动其他文件。</p> <h2 id="非-egg-项目的部署"><a href="#非-egg-项目的部署" class="header-anchor">#</a> 非 <code>egg</code> 项目的部署</h2> <p><strong>如果部署的后台不是 <code>egg项目</code>，则项目默认暴露的端口号可能与 <code>Dockerfile</code> 中的端口号不一致，所以需要进行端口号的修改。</strong></p> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code><span class="token keyword">FROM</span> node AS builder
+<span class="token keyword">WORKDIR</span> /app
+<span class="token keyword">COPY</span> package.json /app/
+<span class="token keyword">RUN</span> npm install <span class="token punctuation">-</span>g cnpm <span class="token punctuation">-</span><span class="token punctuation">-</span>registry=https<span class="token punctuation">:</span>//registry.npm.taobao.org
+<span class="token keyword">RUN</span> cnpm install
+<span class="token keyword">COPY</span> . /app
+<span class="token keyword">RUN</span> npm run build
+
+<span class="token keyword">FROM</span> nginx
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder app/dist /usr/share/nginx/html/
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder app/nginx.conf /etc/nginx/conf.d/nginx.conf
+<span class="token keyword">EXPOSE</span> 5566		<span class="token comment"># 比如某个项目默认后台端口为5566，此处可以改容器暴露的端口号</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注意！！</p> <p>如果更改了容器端口号，一定要在 <code>Jenkinsfile</code> 以及 <code>nginx.conf</code> 中，更改为对应的容器端口</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code># Jenkinsfile
+docker run <span class="token operator">-</span>d <span class="token operator">-</span>p \<span class="token punctuation">$</span>port<span class="token punctuation">:</span><span class="token number">5566</span> <span class="token operator">--</span>name bluej_projectname <span class="token punctuation">$</span><span class="token punctuation">{</span>DOCKER_IMAGE_URL<span class="token punctuation">}</span>
+</code></pre></div><div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token comment"># nginx.conf</span>
+<span class="token keyword">server</span> 
+<span class="token punctuation">{</span>
+    <span class="token keyword">listen</span>   <span class="token number">5566</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <h2 id="静态项目的部署"><a href="#静态项目的部署" class="header-anchor">#</a> 静态项目的部署</h2> <p>由于静态资源不需要进行 build 打包操作，所以拉取进来后的目录结构会和默认打包的目录结构不一样，所以需要进行文件路径的修改。</p> <div class="language-dockerfile extra-class"><pre class="language-dockerfile"><code><span class="token keyword">FROM</span> node AS builder
+<span class="token keyword">WORKDIR</span> /app
+<span class="token keyword">RUN</span> mkdir dist		<span class="token comment"># 创建 dist 目录</span>
+<span class="token keyword">COPY</span> . /app/dist	<span class="token comment"># 将项目扔进 dist 文件夹</span>
+
+<span class="token keyword">FROM</span> nginx
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder app/dist /usr/share/nginx/html/
+<span class="token keyword">COPY</span> <span class="token punctuation">-</span><span class="token punctuation">-</span>from=builder app/dist/nginx.conf /etc/nginx/conf.d/nginx.conf	<span class="token comment"># 由于文件都扔进了dist，nginx也需要从dist拉取</span>
+<span class="token keyword">EXPOSE</span> 80 
+</code></pre></div><h2 id="自定义目标服务器"><a href="#自定义目标服务器" class="header-anchor">#</a> 自定义目标服务器</h2> <div class="language-groovy extra-class"><pre class="language-groovy"><code><span class="token comment">// Jenkinsfile</span>
+
+<span class="token comment">// 声明服务器信息</span>
+<span class="token keyword">def</span> remote <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+remote<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'lyan-serve'</span>
+remote<span class="token punctuation">.</span>allowAnyHosts <span class="token operator">=</span> <span class="token boolean">true</span>
+remote<span class="token punctuation">.</span>host <span class="token operator">=</span> <span class="token string">'106.55.251.169'</span>		<span class="token comment">// 此处可改目标服务器ip</span>
+remote<span class="token punctuation">.</span>port <span class="token operator">=</span> <span class="token number">22</span>
+remote<span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token string">'root'</span>
+remote<span class="token punctuation">.</span>password <span class="token operator">=</span> <span class="token string">'root'</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/autodeploy/guide/process.html" class="prev">
+        快速上手
+      </a></span> <span class="next"><a href="/autodeploy/guide/setup.html">
+        个人服务器安装Docker与Nginx
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/autodeploy/assets/js/app.348341e4.js" defer></script><script src="/autodeploy/assets/js/2.899ccddd.js" defer></script><script src="/autodeploy/assets/js/13.20be7393.js" defer></script>
+  </body>
+</html>
